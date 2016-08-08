@@ -27,78 +27,64 @@
 		</nav>
 		</header>
 		<main>
-			<div class="pic">
-			<img src="http://placehold.it/150x100" width="" height="" alt=""> 
+			<div class="promo">
+			 <img src="http://placehold.it/150x100" width="" height="" alt=""> 
 			</div>
-			<div class="title">
-				<p>Cедона небольшой городок в Аризоне, засдуживающий большего</p>
-			</div>
+			<h1>Cедона небольшой городок в Аризоне, засдуживающий большего</h1>
 			<section class="features">
-				<div class="features-p">
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон</p>
+		    <div class="features-item blue">
+					<h2>Настоящий городок</h2> 
+					<span>-№1-</span>
+					<p>Седонна - не аттракцион для туристов, там течет своя жизнь</p>	
 				</div>
-				<div class="features-list">
-					<div class="features-list-lf">
-						<div class="features-item blue">
-							<h2>Настоящий городок</h2> <!--на странице 5 раз применен h2 это норм?-->
-							<span>-№1-</span>
-							<p>Седонна - не аттракцион для туристов, там течет своя жизнь</p>	
-						</div>
-						<img src="http://placehold.it/150x100" width="" height="" alt="">
+				<img src="http://placehold.it/150x100" width="" height="" alt="">				
+					<div class="features-name">
+						<span>Жилье</span>
+						<p>Рекомендуем пожить в настоящем мотеле. Все как в кино!</p>
 					</div>
-					<div class="item-name">
-						<div class="features-name">
-							<span>Жилье</span>
-							<p>Рекомендуем пожить в настоящем мотеле. Все как в кино!</p>
-						</div>
-						<div class="features-name">
-							<span>Еда</span>
-							<p>Всегда заказывайте фирменный бургер</p>
-						</div>
-						<div class="features-name">
-							<span>Сувениры</span>
-							<p>Не только китайского, но и местного производства</p>
-						</div>
+					<div class="features-name">
+						<span>Еда</span>
+						<p>Всегда заказывайте фирменный бургер</p>
 					</div>
-					<div class="features-list-rg">
-						<div class="features-item blue">
-							<h2>Там есть мост дьявола</h2>
-							<span>-№2-</span>
-							<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>	
-						</div>
-						<img src="http://placehold.it/150x100" width="" height="" alt="">
+					<div class="features-name">
+						<span>Сувениры</span>
+						<p>Не только китайского, но и местного производства</p>
 					</div>
-					<div class="features-list-ctr">
-						<div class="features-item">
-							<h2>Небольшая площадь</h2>
-							<span>-№3-</span>
-							<p>Все достопримечательности находятся очень близко</p>	
-						</div>
-						<div class="features-item">
-							<h2>Красивая дорога</h2>
-							<span>-№4-</span>
-							<p>Ехать в Седонну из Лас-вегаса совсем не скучно!</p>	
-						</div>
-						<div class="features-item">
-							<h2>Мало туристов</h2>
-							<span>-№5-</span>
-							<p>Большинство едет в Гранд Коньон и толпится там</p>	
-						</div>
+					<div class="features-item blue">
+						<h2>Там есть мост дьявола</h2>
+						<span>-№2-</span>
+						<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>	
 					</div>
-					</div> 
+					<img src="http://placehold.it/150x100" width="" height="" alt="">
+					<div class="features-item">
+						<h2>Небольшая площадь</h2>
+						<span>-№3-</span>
+						<p>Все достопримечательности находятся очень близко</p>	
+					</div>
+					<div class="features-item">
+						<h2>Красивая дорога</h2>
+						<span>-№4-</span>
+						<p>Ехать в Седонну из Лас-вегаса совсем не скучно!</p>	
+					</div>
+					<div class="features-item gray">
+						<h2>Мало туристов</h2>
+						<span>-№5-</span>
+						<p>Большинство едет в Гранд Коньон и толпится там</p>	
+					</div>
 			</section>
 			<div class="info">
-				<p class="info-title">Заинтересовались?</p>
+				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостинец в Седоне</p>
 				<div class="search">
 				<div class="search-fon">
-					<h3>Поиск гостиниц в Седоне</h3>
+				<button type="button">Поиск гостиниц в Седоне</button>
 				</div>
 				<form action="" method="post">
 					<label for="date"> Дата заезда</label>
-					<input type="date" id="date">
+					<input type="date" name="date" id="date">
 					<label for="data"> Дата выезда</label>
-					<input type="date" id="data">
+					<input type="date" name="data" id="data">
 					<label for="number"> Взрослые</label>
 					<input type="number" id="number" min="1" max="10" step="1">
 					<label for="numbers"> Дети</label>
@@ -108,7 +94,7 @@
 				</div>
 			</div>
 			<div class="map">
-				<img src="img/map.jpg" width="" height="" alt="">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.1356256917!2d-111.83015810709337!3d34.85444386561881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1470681453566" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</main>
 		<footer class="main-footer">
