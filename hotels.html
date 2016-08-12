@@ -29,45 +29,52 @@
 		</header>
 		<main>
 			<div class="filter">
-				<h2>Ифраструктура:</h2>
-				<div class="filter-ifnra">
-					<form action="" method="post">
-						<input type="checkbox" name="swimming" id="swimming" checked>
-						<label for="swimming>"> Бассейн</label>
-						<input type="checkbox" name="parking" id="parking">
-						<label for="parking"> Парковка</label>
-						<input type="checkbox" name="wi-fi" id="wi-fi">
-						<label for="wi-fi"> Wi-fi</label>
-					</form>
-				</div>
-			
-				<div class="filter-realty">
-					<h2>Тип жилья:</h2>
-					<form action="" method="post">
-						<input type="checkbox" name="hotel" id="hotel" checked>
-						<label for="hotel>"> Отель</label>
-						<input type="checkbox" name="motel" id="motel" checked>
-						<label for="motel"> Мотель</label>
-						<input type="checkbox" name="apartment" id="apartment" checked>
-						<label for="apartment"> Апартаменты</label>
-					</form>
-				</div>	
-				<div class="filter-price">
-					<h2>Стоимость в сутки (Р):</h2>
-					<form action="" method="post">
+				<form action="" method="post">
+					<fieldset class="filter-ifnra">	
+						<legend>Ифраструктура:</legend>
+							<p>
+								<input type="checkbox" name="swimming" id="swimming" checked>
+								<label for="swimming>"> Бассейн</label>
+							</p>
+							<p>
+								<input type="checkbox" name="parking" id="parking">
+								<label for="parking"> Парковка</label>
+							</p>
+							<p>
+								<input type="checkbox" name="wi-fi" id="wi-fi">
+								<label for="wi-fi"> Wi-fi</label>
+							</p>
+					</fieldset>
+					<fieldset class="filter-realty">
+						<legend>Тип жилья:</legend>
+							<p>
+								<input type="checkbox" name="hotel" id="hotel" checked>
+								<label for="hotel>"> Отель</label>
+							</p>
+							<p>
+								<input type="checkbox" name="motel" id="motel" checked>
+								<label for="motel"> Мотель</label>
+							</p>
+							<p>
+								<input type="checkbox" name="apartment" id="apartment" checked>
+								<label for="apartment"> Апартаменты</label>
+							</p>
+					</fieldset>
+					<fieldset class="filter-price">
+						<legend>Стоимость в сутки (Р):</legend>
 						<div>
 						<input type="number" placeholder="от 0">	
 						<input type="number" placeholder="до 3000">
 						</div>
 						<div>бегунок</div>
-						<input type="submit" value="Показать">
-					</form>
-				</div>
-				
-				</div>
+						<div>бегунок</div>
+					</fieldset>
+					<input type="submit" value="Показать">
+				</form>
+			</div>
 			<section class="result">
 				<div class="result-sort">
-					<span class="info-title">Найдено 3:</span>
+					<span >Найдено 3:</span>
 					<span>Сортировка: </span>
 					<ul>
 						<li>
@@ -77,8 +84,8 @@
 						<li>
 							<a href="#">по рейтингу</a></li>
 					</ul>
-					<button type="button"> </button>
-					<button type="button"> </button>
+					<div><!--Треугольники индикаторы--></div> 
+					<div><!--Треугольники индикаторы--> </div>
 				</div>
 				<div class="result-hotel">
 					<article class="result-hotel-item">
