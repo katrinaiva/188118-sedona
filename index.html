@@ -6,8 +6,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="container">
 		<header class="main-header">
-		<nav class="main-nav">
+		<nav class="main-navigation">
 			<ul>
 				<li>
 					<a href="#">Информация</a>
@@ -29,11 +30,13 @@
 		</header>
 		<main>
 			<div class="promo">
-			 <img src="img/promo.jpg" width="1200" height="780" alt="Промо"> 
+			 <img src="img/promo.jpg" width="1200" height="508" alt="Промо"> 
 			</div>
+			<div class="title">
 			<h1>Cедона небольшой городок в Аризоне, засдуживающий большего</h1>
-			<section class="features">
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон</p>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон</p>
+			</div>
+	    <section class="features clearfix">
 		    <div class="features-item blue">
 					<h2>Настоящий городок</h2> 
 					<span>-№1-</span>
@@ -55,18 +58,19 @@
 						<span>Сувениры</span>
 						<p>Не только китайского, но и местного производства</p>
 					</div>
-					<div class="features-item blue">
+					
+					<div class="features-item blue right">
 						<h2>Там есть мост дьявола</h2>
 						<span>-№2-</span>
 						<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>	
 					</div>
 					<img src="img/left.jpg" width="800" height="256" alt="Картинка слева">
-					<div class="features-item">
+					<div class="features-item gray">
 						<h2>Небольшая площадь</h2>
 						<span>-№3-</span>
 						<p>Все достопримечательности находятся очень близко</p>	
 					</div>
-					<div class="features-item">
+					<div class="features-item gray">
 						<h2>Красивая дорога</h2>
 						<span>-№4-</span>
 						<p>Ехать в Седонну из Лас-вегаса совсем не скучно!</p>	
@@ -81,19 +85,22 @@
 				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостинец в Седоне</p>
 				<div class="search">
-				<div class="search-fon">
+				<div class="search-button">
 				<button type="button">Поиск гостиниц в Седоне</button>
 				</div>
 				<form action="" method="post">
-					<label for="date"> Дата заезда</label>
+					<div><label for="date"> Дата заезда</label>
 					<input type="date" name="date" id="date">
-					<label for="data"> Дата выезда</label>
+					</div>
+					<div><label for="data"> Дата выезда</label>
 					<input type="date" name="data" id="data">
-					<label for="number"> Взрослые</label>
+					</div>
+					<div><label for="number"> Взрослые</label>
 					<input type="number" id="number" min="1" max="10" step="1">
 					<label for="numbers"> Дети</label>
 					<input type="number" id="numbers" min="0" max="10" step="1">
-					<input type="submit" value="Найти">
+					</div>
+					<div><input type="submit" value="Найти"></div>
 				</form>
 				</div>
 			</div>
@@ -102,19 +109,21 @@
 			</div>
 		</main>
 		<footer class="main-footer">
-        <div class="footer-contacts">
-					<p>VisitSedona</p>
+        <div class="footer-contacts layout">
+					<p>#VisitSedona</p>
         </div>
-        <div class="footer-social">
+        <div class="footer-social layout">
           <a class="social social-vk" href="#">Вконтакте</a>
           <a class="social social-fb" href="#">Фейсбук</a>
           <a class="social social-yt" href="#">Ютюб</a>
         </div>
-        <div class="footer-copyright">
+        
+        <div class="footer-copyright layout">
           <span>Website by</span>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-          <img src="img/copyrigth.png" width="113" height="39" alt="Копирайт">
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/copyrigth.png" width="113" height="39" alt="Копирайт"></a>
+          
         </div>
 		</footer>
+		</div>
   </body>
 </html>
