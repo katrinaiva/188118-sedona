@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+	list-style: none;
 }
 body {
 	
@@ -43,6 +44,7 @@ h2 {
 	width: 240px;
 	font-size: 14px;
 	vertical-align: middle;
+	
 }
 
 .container {
@@ -94,8 +96,6 @@ h2 {
 
 .info {
  min-height: 291px;
-	/* Для сетки */
-	outline: 3px dashed #f5af5c;
 }
 
 .search {
@@ -167,8 +167,6 @@ h2 {
 	width: 240px;
 }
 
-
-
 .gray {
 	background: #eeeeee;
 }
@@ -176,4 +174,82 @@ h2 {
 .blue {
 	background: #81b3d2;
 	
+}
+
+
+/*страница hotels*/
+
+.positioner {
+	width: 1055px;
+  margin: 0 auto;
+	
+}
+
+.filter {
+	background-image: url("../img/fon-hotels.jpg");
+	min-height: 217px;
+}
+
+.filter-layout {
+	float: left;
+}
+
+.filter-ifnra {
+	width: 240px;
+	
+}
+
+.filter-realty {
+	width: 287px;
+	margin-right: 176px;
+}
+
+.filter-price {
+	width: 327px;
+}
+
+
+
+.result-sort li {
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 32px;
+}
+
+.result-sort li:last-child {
+	float: right;
+}
+
+/*
+.result-sort {
+	min-height: 86px;
+	font-size: 0;
+}
+
+.result-sort li {
+	display: inline-block;
+	vertical-align: middle;
+		font-size: 14px;
+}*/
+
+.result-hotel-item {
+	padding: 30px 0;
+	min-height: 90px;
+	border-top: 1px solid #e5e5e5; 
+}
+.result-column1 {
+	float: left;
+	width: 135px;
+	margin-right: 28px;
+}
+
+.result-column2 {
+	float: left;
+	width: 265px;
+}
+
+.result-column3 {
+	float: right;
+	width: 120px;
+	text-align: right;
 }
