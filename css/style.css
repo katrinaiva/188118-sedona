@@ -140,8 +140,8 @@ h2 {
 .main-footer {
   text-align: center; 
 	font-size: 0;
-	padding-top: 34px;
-	padding-bottom: 34px;
+	padding-top: 36px;
+	padding-bottom: 36px;
 }
 
 .layout {
@@ -213,11 +213,31 @@ h2 {
 .result-sort li {
 	float: left;
 	margin-top: 30px;
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 }
 
 .result-sort li:last-child {
 	float: right;
+}
+
+.result-title {
+	width: 115px;
+	margin-right: 48px;
+}
+
+.result-sortirov {
+	width: 76px;
+	margin-right: 38px;
+}
+
+.result-sort li a{
+	width: 48px;
+	margin-right: 32px;
+}
+
+result-sort li a:last-child {
+	width: 75px;
+	margin-right: 0px;
 }
 
 /*
