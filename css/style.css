@@ -56,22 +56,26 @@ h2 {
 
 
 .promo {
+	position: relative;
 	min-height: 508px;
 	width: 1200px;
-  background-image: url("img/promo.jpg");
+  
+	background: url("../img/promo-treygol.png");
+	background: url("../img/promo.jpg") no-repeat;
 }
 
 .promo-text {
-	display: block;
+	position: absolute;
+	left: 370px;
+	top: 76px;
 	width: 458px;
-	margin: 0 auto;
 
 }
 
 .title {
 	min-height: 216px;
 	width: 1200px;
-	outline: 3px dashed #d21e37;
+	
 }
 
 
