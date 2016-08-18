@@ -58,8 +58,14 @@ h2 {
 .promo {
 	min-height: 508px;
 	width: 1200px;
-	/* Для сетки */
-	outline: 3px dashed #d21e37;
+  background-image: url("img/promo.jpg");
+}
+
+.promo-text {
+	display: block;
+	width: 458px;
+	margin: 0 auto;
+
 }
 
 .title {
