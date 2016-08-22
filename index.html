@@ -11,8 +11,7 @@
   <div class="container">
 
 		<header class="main-header">
-      <div class="positioner">
-		    <nav class="main-navigation">
+     <nav class="main-navigation clearfix">
           <ul>
             <li class="main-navigation-left">
 					   <a href="#">Информация</a>
@@ -27,11 +26,11 @@
 					 <a href="#">Гостиницы</a>
 				    </li>
           </ul>
-           <div class="logo">
-					   <img src="img/logo.png" width="138" height="70" alt="Седона">
-            </div>
-		  </nav>
-    </div>
+       <div class="logo">
+				<img src="img/logo.png" width="138" height="70" alt="Седона">
+      </div>
+      </nav>
+
 		</header>
 		<main>
 			<div class="promo">
@@ -42,34 +41,39 @@
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон</p>
 			</div>
 	    <section class="features clearfix">
-		    <div class="features-item blue">
-					<h2>Настоящий городок</h2>
-					<span>-№1-</span>
-					<p>Седонна - не аттракцион для туристов, там течет своя жизнь</p>
-				</div>
-				<img src="img/right.jpg" width="800" height="256" alt="Картинка справа">
-					<div class="features-name">
-						<img src="img/dom.png" width="75" height="72" alt="Иконка дом">
-						<span>Жилье</span>
-						<p>Рекомендуем пожить в настоящем мотеле. Все как в кино!</p>
+		      <div class="features-item text blue">
+				    <h2>Настоящий городок</h2>
+            <span>-№1-</span>
+						<p>Седонна - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
-					<div class="features-name">
-						<img src="img/eda.png" width="74" height="70" alt="Иконка еда">
-						<span>Еда</span>
-						<p>Всегда заказывайте фирменный бургер</p>
-					</div>
-					<div class="features-name">
-						<img src="img/prezent.png" width="64" height="76" alt="Иконка сувениры">
-						<span>Сувениры</span>
-						<p>Не только китайского, но и местного производства</p>
-					</div>
-
+        	<div class="features-image">
+						<img src="img/right.jpg" width="800" height="256" alt="Картинка справа">
+        	</div>
+        	<div class="clearfix">
+						<div class="features-name">
+							<img src="img/dom.png" width="75" height="70" alt="Иконка дом">
+							<h3>Жилье</h3>
+							<p>Рекомендуем пожить в настоящем мотеле, Все как в кино!</p>
+						</div>
+						<div class="features-name">
+							<img src="img/eda.png" width="74" height="70" alt="Иконка еда">
+							<h3>Еда</h3>
+							<p>Всегда заказывайте фирменный бургер</p>
+						</div>
+						<div class="features-name">
+							<img src="img/prezent.png" width="64" height="70" alt="Иконка сувениры">
+							<h3>Сувениры</h3>
+							<p>Не только китайского, но и местного производства</p>
+						</div>
+        	</div>
 					<div class="features-item blue right">
 						<h2>Там есть мост дьявола</h2>
 						<span>-№2-</span>
 						<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
 					</div>
-					<img src="img/left.jpg" width="800" height="256" alt="Картинка слева">
+          <div class="features-image">
+						<img src="img/left.jpg" width="800" height="256" alt="Картинка слева">
+        	</div>
 					<div class="features-item gray">
 						<h2>Небольшая площадь</h2>
 						<span>-№3-</span>
@@ -87,25 +91,33 @@
 					</div>
 			</section>
 			<div class="info">
-				<h3>Заинтересовались?</h3>
+				<span>Заинтересовались?</span>
 				<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостинец в Седоне</p>
 				<div class="search">
-				<div class="search-button">
 				<button type="button">Поиск гостиниц в Седоне</button>
-				</div>
-				<form action="" method="post">
-					<div><label for="date"> Дата заезда</label>
-					<input type="date" name="date" id="date">
+				<form class="clearfix" action="" method="post">
+					<div class="search-calendar">
+            <label for="date"> Дата заезда</label>
+            <span class="icon-calendar"></span>
+            <input type="date" name="date" id="date">
 					</div>
-					<div><label for="data"> Дата выезда</label>
-					<input type="date" name="data" id="data">
+					<div class="search-calendar">
+						<label for="data"> Дата выезда</label>
+            <input type="date" name="data" id="data"><span class="icon-calendar"></span>
 					</div>
-					<div><label for="number"> Взрослые</label>
-					<input type="number" id="number" min="1" max="10" step="1">
-					<label for="numbers"> Дети</label>
-					<input type="number" id="numbers" min="0" max="10" step="1">
+						<!-- <label for="number"> Взрослые</label>
+						<input type="number" id="number" min="1" max="10" step="1"> -->
+            <div class="search-adult"><label for="adult"> Взрослые:</label>
+						<input type="text" id="adult" name="adult" placeholder="0">
+            </div>
+
+          <div class="search-deti">
+						<label for="deti">Дети:</label>
+						<input type="text" id="deti" name="deti" placeholder="2">
 					</div>
-					<div><input type="submit" value="Найти"></div>
+					<div class="search-button-blue">
+            <input type="submit" value="Найти">
+          </div>
 				</form>
 				</div>
 			</div>
