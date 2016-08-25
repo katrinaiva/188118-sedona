@@ -3,34 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="home">
   <div class="container">
 
 		<header class="main-header">
-     <nav class="main-navigation clearfix">
+     <nav class="main-menu clearfix">
           <ul>
-            <li class="main-navigation-left">
+            <li class="main-menu-left">
 					   <a href="#">Информация</a>
             </li>
-            <li class="main-navigation-left">
+            <li class="main-menu-left">
 					   <a href="#">Фото и видео</a>
             </li>
-            <li class="main-navigation-right">
+            <li class="main-menu-right">
 					 <a href="#">Карта штата</a>
             </li>
-				    <li class="main-navigation-right">
-					 <a href="#">Гостиницы</a>
+				    <li class="main-menu-right">
+					 <a href="/hotels.html">Гостиницы</a>
 				    </li>
           </ul>
        <div class="logo">
 				<img src="img/logo.png" width="138" height="70" alt="Седона">
       </div>
       </nav>
-
 		</header>
 		<main>
 			<div class="promo">
@@ -94,8 +93,10 @@
 				<span>Заинтересовались?</span>
 				<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостинец в Седоне</p>
 				<div class="search">
+          <div class="search-btn">
 				<button type="button">Поиск гостиниц в Седоне</button>
-				<form class="clearfix" action="" method="post">
+          </div>
+				<form class="search-form clearfix" action="/echo" method="post">
 					<div class="search-calendar">
             <label for="date"> Дата заезда</label>
             <span class="icon-calendar"></span>
@@ -103,17 +104,22 @@
 					</div>
 					<div class="search-calendar">
 						<label for="data"> Дата выезда</label>
-            <input type="date" name="data" id="data"><span class="icon-calendar"></span>
+            <span class="icon-calendar"></span>
+            <input type="date" name="data" id="data">
 					</div>
 						<!-- <label for="number"> Взрослые</label>
 						<input type="number" id="number" min="1" max="10" step="1"> -->
-            <div class="search-adult"><label for="adult"> Взрослые:</label>
+          <div class="search-adult">
+            <label for="adult"> Взрослые:</label>
+            <span class="icon-minus"></span>
 						<input type="text" id="adult" name="adult" placeholder="0">
-            </div>
-
+            <span class="icon-plus"></span>
+          </div>
           <div class="search-deti">
 						<label for="deti">Дети:</label>
+            <span class="icon-minus"></span>
 						<input type="text" id="deti" name="deti" placeholder="2">
+            <span class="icon-plus"></span>
 					</div>
 					<div class="search-button-blue">
             <input type="submit" value="Найти">
@@ -130,9 +136,10 @@
 					<p>#VisitSedona</p>
         </div>
         <div class="footer-social layout">
-          <a class="social social-vk" href="#">Вконтакте</a>
-          <a class="social social-fb" href="#">Фейсбук</a>
-          <a class="social social-yt" href="#">Ютюб</a>
+          <a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
+          <a class="social-btn" href="#">
+            <span class="icon-facebook"></span>Фейсбук</a>
+          <a class="social-btn" href="#"> <span class="icon-youtube"></span>Ютюб</a>
         </div>
 
         <div class="footer-copyright layout">
