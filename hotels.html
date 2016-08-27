@@ -18,12 +18,12 @@
             <li class="main-menu-left">
 					   <a href="#">Фото и видео</a>
             </li>
+             <li class="main-menu-right active">
+					 <a>Гостиницы</a>
+				    </li>
             <li class="main-menu-right">
 					 <a href="#">Карта штата</a>
             </li>
-				    <li class="main-menu-right active">
-					 <a>Гостиницы</a>
-				    </li>
           </ul>
 					<div class="logo">
 						<a href="/index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
@@ -31,10 +31,10 @@
       	</nav>
 			</header>
 		<main>
-			<div class="filter">
+			<div class="filter-img">
 					<form class="filter-form clearfix" action="/echo" method="post">
 						<fieldset class="filter-ifnra filter-layout">
-							<legend>Ифраструктура:</legend>
+							<legend>Инфраструктура:</legend>
 								<p>
 								<input type="checkbox" name="swimming" id="swimming" checked>
 								<label  class="sprite-checed" for="swimming"> Бассейн</label>
@@ -52,7 +52,7 @@
 						<legend>Тип жилья:</legend>
 							<p>
 								<input type="checkbox" name="hotel" id="hotel" checked>
-								<label class="sprite-checed" for="hotel"> Отель</label>
+								<label class="sprite-checed" for="hotel"> Гостиница</label>
 							</p>
 							<p>
 								<input type="checkbox" name="motel" id="motel" checked>
@@ -80,10 +80,8 @@
 								<div class="range-toggle range-toggle-min"></div>
 								<div class="range-toggle range-toggle-max"></div>
 							</div>
-
 						<input class="btn-transparent" type="submit" value="Показать">
 					</fieldset>
-
 				</form>
 				</div>
 
@@ -92,7 +90,7 @@
 			<div class="positioner">
 				<div class="result-selection">
 					<ul class="clearfix">
-            <li class="result-title"><span>Найдено 3:</span></li>
+            <li class="result-title"><span>Найдено: 3</span></li>
             <li class="result-sort"><span>Сортировка:</span> </li>
 						<li class="result-type">
 							<a class="active">по цене</a></li>
@@ -182,8 +180,9 @@
 			</main>
 
 			<footer class="main-footer">
+        <div class="positioner">
         <div class="footer-contacts layout">
-					<p>#VisitSedona</p>
+					<span>#VisitSedona</span>
         </div>
         <div class="footer-social layout">
           <a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
@@ -196,9 +195,8 @@
           <span>Website by</span>
           <a class="btn" href="https://htmlacademy.ru"><img src="img/copyrigth.png" width="113" height="39" alt="Копирайт"></a>
         </div>
+        </div>
 		</footer>
-
-
 		</div>
   </body>
 </html>
