@@ -224,6 +224,7 @@ body {
 
 .title {
 	text-align: center;
+
 }
 
 h1 {
@@ -239,6 +240,7 @@ h1 {
   margin-top: 60px;
   margin-left: 310px;
   margin-bottom: 28px;
+  padding-left: 3px;
 }
 
 p {
@@ -351,7 +353,7 @@ h3 {
 .info {
   padding-top: 55px;
   text-align: center;
-  min-height: 290px;
+
 }
 
 .info span {
@@ -365,7 +367,7 @@ h3 {
   padding: 0;
   width: 436px;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 48px;
   font-size: 14px;
   line-height: 24px;
@@ -374,12 +376,13 @@ h3 {
 .search {
 	width: 568px;
 	margin: 0 auto;
+  position: relative;
 }
 
 .search-btn input,
 button {
   width: 568px;
-	padding-top: 28px;
+	padding-top: 30px;
   padding-bottom: 28px;
 	background: #766357;
 	color: #ffffff;
@@ -393,6 +396,7 @@ button {
 }
 
 .search-form {
+  position: absolute;
   width: 568px;
   background: #ffffff;
   padding-top: 54px;
@@ -406,6 +410,7 @@ label {
   font-weight: bold;
 }
 
+
 .search-calendar {
   position: relative;
   width: 458px;
@@ -413,10 +418,10 @@ label {
 }
 
 .search-calendar input {
-  width: 314px;
-  margin-bottom: 29px;
+  width: 321px;
+  margin-bottom: 28px;
   margin-left: 18px;
-  padding: 6px 16px;
+  padding: 7px 13px;
   background: #f2f2f2;
   color: #000000;
   font-family: inherit;
@@ -426,6 +431,8 @@ label {
   font-weight: bold;
   border: none;
 }
+
+
 
 .search-calendar input:hover {
   color: #000000;
@@ -458,6 +465,7 @@ label {
 }
 
 .search-adult {
+
   float: left;
   width: 232px;
   margin-left: 52px;
@@ -469,26 +477,24 @@ label {
 }
 
 .search-adult label {
-  margin-right: 35px;
+  margin-right: 34px;
 }
 
 .search-adult input[type="text"] {
-  margin-right: 0;
+  margin-right: 4px;
 }
 
-.search-deti input[type="text"] {
-  margin-right: -10px;
-}
+
 
 .search-deti label {
-  margin-right: 24px;
-  margin-left: 38px;
+  margin-right: 20px;
+  margin-left: 48px;
 }
 
 .search-adult input,
 .search-deti input {
   box-sizing: border-box;
-  padding: 6px 52px;
+  padding: 6px 53px;
   width: 114px;
   font-family: inherit;
   text-transform: uppercase;
@@ -528,7 +534,7 @@ label {
 .search-deti .icon-minus {
   position: absolute;
   top: 6px;
-  left: 126px;
+  left: 127px;
   font-size: 14px;
   line-height: 26px;
   color: #a9a9a9;
@@ -537,7 +543,7 @@ label {
 .search-deti .icon-plus {
   position: absolute;
   top: 6px;
-  right: 14px;
+  right: 10px;
   font-size: 14px;
   line-height: 26px;
   color: #a9a9a9;
@@ -560,7 +566,7 @@ label {
 .search-button-blue input[type="submit"]
  {
   width: 458px;
-  margin: 53px auto;
+  margin: 55px auto;
   padding-top: 16px;
   padding-bottom: 16px;
   background: #81b3d2;
@@ -676,21 +682,25 @@ input[type="submit"]:active {
 
 .filter-img {
 	background: #42759d url("../img/fon-hotels.jpg") no-repeat;
+
 }
 
 .filter-form {
   width: 1056px;
   margin: 0 auto;
+
 }
 
 .filter-layout {
 	float: left;
-  margin-top: 28px;
+  margin-top: 27px;
 }
 
 .filter-layout:last-child {
-  margin-left: 192px;
+  float: right;
 }
+
+
 
 .filter-ifnra {
 	width: 200px;
@@ -720,28 +730,23 @@ legend {
 
 input[type="checkbox"] {
   display: none;
-
-}
-
-.filter-realty input[type="checkbox"] + label {
-  padding-left: 42px;
-  margin-left: 32px;
 }
 
 input[type="checkbox"] + label {
   position: relative;
   display: block;
-  margin-bottom: 22px;
-  padding-left: 39px;
+  margin-bottom: 23px;
+  padding-left: 38px;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   cursor: pointer;
 }
 
-/*input[type="checkbox"]:last-child + label {
-  margin-bottom: 0;
-}*/
+.filter-realty input[type="checkbox"] + label {
+  padding-left: 42px;
+  margin-left: 32px;
+}
 
 input[type="checkbox"] + label::before {
   content: "\2610";
@@ -750,7 +755,6 @@ input[type="checkbox"] + label::before {
   left: 0;
   font-size: 26px;
   font-family: "symbols-sedona";
-  /*background-image: url(../img/sprites.png);*/
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -763,59 +767,49 @@ input[type="checkbox"]:disabled + label::before {
   color: #6a6a6a;
 }
 
-
-
-
-/*.sprite-checed::before {
-  width: 26px;
-  height: 22px;
-  background-position: -307px -10px;}
-
-.sprite-kvadrat::before {
-  width: 22px;
-  height: 22px;
-  background-position: -383px -10px;*/
-}
-
 .filter-range {
-	width: 330px;
+  box-sizing: border-box;
+  width: 324px;
   color: #ffffff;
   text-transform: uppercase;
 
 }
 
-filter-range-title {
-  margin-bottom: 11px;
+.filter-range legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
 }
 
 .price-controls {
+  box-sizing: border-box;
   position: relative;
   height: 36px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 0;
+  padding-left: 4px;
+
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 36px;
-  vertical-align: top;
+  vertical-align: bottom;
   cursor: pointer;
+
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 59px;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 40px;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -828,40 +822,18 @@ filter-range-title {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  transform: translate(-52%, -52%);
 }
 
-.price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
-}
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
-}
-
-.price-controls input {
-  width: 50px;
-  margin: 0;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
-  outline: none;
-}
 
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -870,9 +842,10 @@ filter-range-title {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 85%;
   height: 2px;
   background: #ffffff;
+
 }
 
 .range-toggle {
@@ -896,13 +869,13 @@ filter-range-title {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 83%;
 }
 
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -929,7 +902,7 @@ filter-range-title {
 .result-selection li {
 	display: inline-block;
   vertical-align: bottom;
-	margin-top: 30px;
+	margin-top: 28px;
 	margin-bottom: 26px;
 }
 
