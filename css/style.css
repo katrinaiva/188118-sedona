@@ -193,7 +193,8 @@ body {
 }
 
 .container {
-	width: 1200px;
+  position: relative;
+ 	width: 1200px;
 	margin: 0 auto;
 	background: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -575,6 +576,10 @@ input[type="submit"]:active {
   color: rgba(255,255,255, 0.3);
 }
 
+.map {
+  height: 594px;
+}
+
 .main-footer {
   padding-top: 36px;
 	padding-bottom: 36px;
@@ -582,16 +587,25 @@ input[type="submit"]:active {
   text-align: center;
 }
 
+.home .main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  background: rgba(255,255,255, 0.8);
+}
+
 .layout {
 	display: inline-block;
 	vertical-align: middle;
   text-align: center;
 }
+
 .footer-contacts span {
   padding: 0 60px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  color: #000000;
 }
 
 .footer-social {
