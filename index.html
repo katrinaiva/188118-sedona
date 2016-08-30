@@ -144,5 +144,13 @@
       </div>
 		</footer>
 	</div>
+    <script>
+      var popup = document.querySelector(".js-popup");
+      var form = document.querySelector(".search-form");
+      popup.addEventListener("click", function(event) {
+        event.preventDefault();
+        form.classList.add("search-form-show");
+      });
+    </script>
   </body>
 </html>
