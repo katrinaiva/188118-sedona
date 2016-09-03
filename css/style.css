@@ -158,15 +158,15 @@ body {
 	color: #b2b2b2;
 }
 
-.main-menu .active a{
+.active a{
 	color: #766357;
 }
 
-.main-menu .active a:hover {
+.active a:hover {
 	color: #604e43;
 }
 
-.main-menu .active a:active {
+.active a:active {
 	color: #d6d0cc;
 }
 
@@ -626,6 +626,7 @@ input[type="submit"]:active {
 
 .map {
 	height: 594px;
+  background: #e9e5dc url("../img/map.jpg") no-repeat;
 }
 
 .main-footer {
@@ -711,15 +712,15 @@ input[type="submit"]:active {
 	vertical-align: middle;
 	width: 113px;
 	height: 39px;
-	background: url(../img/copyrigth.png) no-repeat;
+	background: url("../img/copyrigth.png") no-repeat;
 }
 
 .footer-copyright a:hover {
-	background: url("../img/copyrigth-blue.png");
+	background: url("../img/copyrigth-blue.png") no-repeat;
 }
 
 .footer-copyright a:active {
-	background: url("../img/copyrigth-gray.png");
+	background: url("../img/copyrigth-gray.png") no-repeat;
 }
 
 .filter-img {
@@ -865,7 +866,8 @@ input[type="checkbox"]:disabled + label::before {
 	height: 22px;
 	background: #ffffff;
 	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .range-controls {
