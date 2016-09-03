@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="home">
-  <div class="container">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body class="home">
+	<div class="container">
 		<header class="main-header">
-    	<nav class="main-menu clearfix">
-        <ul>
-          <li class="main-menu-left">
-					  <a href="#">Информация</a>
-          </li>
-          <li class="main-menu-left">
+			<nav class="main-menu clearfix">
+				<ul>
+					<li class="main-menu-left">
+						<a href="#">Информация</a>
+					</li>
+					<li class="main-menu-left">
 						<a href="#">Фото и видео</a>
-          </li>
-          <li class="main-menu-right">
-					 	<a href="/hotels.html">Гостиницы</a>
-				  </li>
-          <li class="main-menu-right">
-					 	<a href="#">Карта штата</a>
-          </li>
-        </ul>
-      	<div class="logo">
+					</li>
+					<li class="main-menu-right">
+						<a href="hotels.html">Гостиницы</a>
+					</li>
+					<li class="main-menu-right">
+						<a href="#">Карта штата</a>
+					</li>
+				</ul>
+				<div class="logo">
 					<img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
 				</div>
-    	</nav>
+			</nav>
 		</header>
 		<main>
 		<div class="promo">
@@ -38,16 +38,16 @@
 			<h1>СЕДОНА — небольшой городок в АРИЗОНЕ,  зАСЛУЖИвающий большего! </h1>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</div>
-	  <section class="features clearfix">
-		  <div class="features-item text blue">
+		<section class="features clearfix">
+			<div class="features-item text blue">
 				<h2>Настоящий городок</h2>
-          <span> — №1 —</span>
+					<span> — №1 —</span>
 					<p>Седона —  не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
-      <div class="features-image">
+			<div class="features-image">
 					<img src="img/right.jpg" width="800" height="256" alt="Картинка справа">
-      </div>
-      <div class="clearfix">
+			</div>
+			<div class="clearfix">
 				<div class="features-name">
 					<img src="img/dom.png" width="75" height="70" alt="Иконка дом">
 					<h3>Жилье</h3>
@@ -63,15 +63,15 @@
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
-      </div>
+			</div>
 			<div class="features-item blue right">
 				<h2>ТАМ ЕСТЬ<br>  Мост дьявола</h2>
 				<span>— №2 —</span>
 				<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
 			</div>
-      <div class="features-image">
+			<div class="features-image">
 				<img src="img/left.jpg" width="800" height="256" alt="Картинка слева">
-      </div>
+			</div>
 				<div class="features-item gray">
 					<h2>Небольшая площадь</h2>
 					<span>— №3 — </span>
@@ -92,35 +92,35 @@
 			<span>Заинтересовались?</span>
 			<p>Укажите предполагаемые даты поездки <br>и мы покажем Вам лучшие предложения гостинец в Седоне</p>
 			<div class="search">
-        <div class="search-btn">
-					<button class="js-popup">Поиск гостиницы в Седоне</button>
-        </div>
+				<div class="search-btn">
+					<button class="js-btn">Поиск гостиницы в Седоне</button>
+				</div>
 				<form class="search-form clearfix" action="/echo" method="post">
 					<div class="search-calendar">
-            <label for="text"> Дата заезда:</label>
-            <span class="icon-calendar"></span>
-            <input type="text" name="text" id="text" value="24 Апреля 2016">
+						<label for="text"> Дата заезда:</label>
+						<span class="icon-calendar"></span>
+						<input type="text" name="arrival-date" id="text" value="24 Апреля 2016" required>
 					</div>
 					<div class="search-calendar">
 						<label for="texts"> Дата выезда:</label>
-            <span class="icon-calendar"></span>
-            <input type="text" name="texts" id="texts" value="4 июля 2016">
+						<span class="icon-calendar"></span>
+						<input type="text" name="texts" id="date-of-departure" value="4 июля 2016" required>
 					</div>
-          <div class="search-adult">
-            <label for="adult"> Взрослые:</label>
-            <span class="icon-minus"></span>
-						<input type="text" id="adult" name="adult" value="0">
-            <span class="icon-plus"></span>
-          </div>
-          <div class="search-deti">
+					<div class="search-adult">
+						<label for="adult"> Взрослые:</label>
+						<span class="icon-minus"></span>
+						<input type="text" id="adult" name="adult" value="0" required>
+						<span class="icon-plus"></span>
+					</div>
+					<div class="search-deti">
 						<label for="deti">Дети:</label>
-            <span class="icon-minus"></span>
-						<input type="text" id="deti" name="deti" value="2">
-            <span class="icon-plus"></span>
+						<span class="icon-minus"></span>
+						<input type="text" id="deti" name="deti" value="2" required>
+						<span class="icon-plus"></span>
 					</div>
 					<div class="search-button-blue">
-            <input type="submit" value="Найти">
-          </div>
+						<input type="submit" value="Найти">
+					</div>
 				</form>
 			</div>
 		</div>
@@ -129,28 +129,20 @@
 		</div>
 		</main>
 		<footer class="main-footer">
-      <div class="footer-contacts layout">
+			<div class="footer-contacts layout">
 				<span>#VisitSedona</span>
-      </div>
-      <div class="footer-social layout">
-        <a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
-        <a class="social-btn" href="#">
-          <span class="icon-facebook"></span>Фейсбук</a>
-        <a class="social-btn" href="#"> <span class="icon-youtube"></span>Ютюб</a>
-      </div>
-      <div class="footer-copyright layout">
-        <span>Website by</span>
-        <a class="btn" href="https://htmlacademy.ru"></a>
-      </div>
+			</div>
+			<div class="footer-social layout">
+				<a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
+				<a class="social-btn" href="#">
+					<span class="icon-facebook"></span>Фейсбук</a>
+				<a class="social-btn" href="#"> <span class="icon-youtube"></span>Ютюб</a>
+			</div>
+			<div class="footer-copyright layout">
+				<span>Website by</span>
+				<a class="btn" href="https://htmlacademy.ru"></a>
+			</div>
 		</footer>
 	</div>
-    <script>
-      var popup = document.querySelector(".js-popup");
-      var form = document.querySelector(".search-form");
-      popup.addEventListener("click", function(event) {
-        event.preventDefault();
-        form.classList.add("search-form-show");
-      });
-    </script>
-  </body>
+	</body>
 </html>

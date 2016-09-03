@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="inner-page">
-  	<div class="container">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body class="inner-page">
+		<div class="container">
 			<header class="main-header">
 				<nav class="main-menu clearfix">
-          <ul>
-            <li class="main-menu-left">
-					   <a href="#">Информация</a>
-            </li>
-            <li class="main-menu-left">
-					   <a href="#">Фото и видео</a>
-            </li>
-             <li class="main-menu-right active">
-					 <a>Гостиницы</a>
-				    </li>
-            <li class="main-menu-right">
-					 <a href="#">Карта штата</a>
-            </li>
-          </ul>
-					<div class="logo">
-						<a href="/index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
-      		</div>
-      	</nav>
+					<ul>
+						<li class="main-menu-left">
+							<a href="#">Информация</a>
+						</li>
+						<li class="main-menu-left">
+							<a href="#">Фото и видео</a>
+						</li>
+						<li class="main-menu-right active">
+							<a>Гостиницы</a>
+						</li>
+						<li class="main-menu-right">
+							<a href="#">Карта штата</a>
+						</li>
+					</ul>
+						<div class="logo">
+							<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
+						</div>
+				</nav>
 			</header>
-		  <main>
-        <div class="filter-img">
+			<main>
+				<div class="filter-img">
 					<form class="filter-form clearfix" action="/echo" method="post">
 						<fieldset class="filter-ifnra filter-layout">
 							<legend>Инфраструктура:</legend>
 								<p>
-								<input type="checkbox" name="swimming" id="swimming" checked>
-								<label  class="sprite-checed" for="swimming"> Бассейн</label>
+									<input type="checkbox" name="swimming" id="swimming" checked>
+									<label  class="sprite-checed" for="swimming"> Бассейн</label>
 								</p>
 								<p>
-								<input type="checkbox" name="parking" id="parking">
-								<label class="sprite-kvadrat" for="parking"> Парковка</label>
+									<input type="checkbox" name="parking" id="parking">
+									<label class="sprite-kvadrat" for="parking"> Парковка</label>
 								</p>
 								<p>
-								<input type="checkbox" name="wi-fi" id="wi-fi" disabled>
-								<label class="sprite-kvadrat" for="wi-fi"> Wi-fi</label>
+									<input type="checkbox" name="wi-fi" id="wi-fi" disabled>
+									<label class="sprite-kvadrat" for="wi-fi"> Wi-fi</label>
 								</p>
 						</fieldset>
-				    <fieldset class="filter-realty filter-layout">
-						  <legend>Тип жилья:</legend>
-                <p>
-								<input type="checkbox" name="hotel" id="hotel" checked>
-								<label class="sprite-checed" for="hotel"> Гостиница</label>
-							  </p>
-						    <p>
-								<input type="checkbox" name="motel" id="motel" checked>
-								<label class="sprite-checed" for="motel"> Мотель</label>
-                </p>
-						    <p>
-								<input type="checkbox" name="apartment" id="apartment">
-								<label for="apartment"> Апартаменты</label>
-						    </p>
-				    </fieldset>
-				    <fieldset class="filter-range filter-layout">
-              <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
-                <div class="price-controls">
-                  <label class="min-price">от
-								    <input type="text" name="min-price" value="0">
-								  </label>
-								  <label class="max-price">до
-                    <input type="text" name="max-price" value="3000">
-								  </label>
-				        </div>
-						    <div class="range-controls">
-								  <div class="scale">
-                    <div class="bar"></div>
-								  </div>
-								  <div class="range-toggle range-toggle-min"></div>
-								  <div class="range-toggle range-toggle-max"></div>
-						    </div>
-						  <input class="btn-transparent" type="submit" value="Показать">
-		        </fieldset>
-				  </form>
+						<fieldset class="filter-realty filter-layout">
+							<legend>Тип жилья:</legend>
+								<p>
+									<input type="checkbox" name="hotel" id="hotel" checked>
+									<label class="sprite-checed" for="hotel"> Гостиница</label>
+								</p>
+								<p>
+									<input type="checkbox" name="motel" id="motel" checked>
+									<label class="sprite-checed" for="motel"> Мотель</label>
+								</p>
+								<p>
+									<input type="checkbox" name="apartment" id="apartment">
+									<label for="apartment"> Апартаменты</label>
+								</p>
+						</fieldset>
+						<fieldset class="filter-range filter-layout">
+							<legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+							<div class="price-controls">
+								<label class="min-price">от
+									<input type="text" name="min-price" value="0">
+								</label>
+								<label class="max-price">до
+									<input type="text" name="max-price" value="3000">
+								</label>
+							</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+									<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
+							</div>
+							<input class="btn-transparent" type="submit" value="Показать">
+						</fieldset>
+					</form>
 				</div>
 				<section class="result">
 					<div class="positioner">
@@ -165,9 +165,9 @@
 										<a class="hotel-more" href="#" title="Подробнее">Подробнее</a>
 										<a class="hotel-cart" href="#" title="Забронировать">Забронировать</a>
 									</div>
-            		</div>
+								 </div>
 								<div class="result-column3">
-            		<span class="icon-stars sprite-3star"></span>
+									<span class="icon-stars sprite-3star"></span>
 									<span class="rating">Рейтинг: 9.2</span>
 								</div>
 							</div>
@@ -176,22 +176,22 @@
 				</section>
 			</main>
 			<footer class="main-footer">
-        <div class="positioner">
-        <div class="footer-contacts layout">
+		<div class="positioner">
+		<div class="footer-contacts layout">
 					<span>#VisitSedona</span>
-        </div>
-        <div class="footer-social layout">
-          <a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
-          <a class="social-btn" href="#">
-            <span class="icon-facebook"></span>Фейсбук</a>
-          <a class="social-btn" href="#"> <span class="icon-youtube"></span>Ютюб</a>
-        </div>
-        <div class="footer-copyright layout">
-          <span>Website by</span>
-          <a class="btn" href="https://htmlacademy.ru"></a>
-        </div>
-        </div>
+		</div>
+		<div class="footer-social layout">
+			<a class="social-btn" href="#"> <span class="icon-twitter"></span>Твитер</a>
+			<a class="social-btn" href="#">
+			<span class="icon-facebook"></span>Фейсбук</a>
+			<a class="social-btn" href="#"> <span class="icon-youtube"></span>Ютюб</a>
+		</div>
+		<div class="footer-copyright layout">
+			<span>Website by</span>
+			<a class="btn" href="https://htmlacademy.ru"></a>
+		</div>
+		</div>
 			</footer>
 		</div>
-  </body>
+	</body>
 </html>
